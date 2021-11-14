@@ -11,7 +11,7 @@ export const Produto = () => {
     const [produto,getProduto] = useState([]);
 
     useEffect (()=>{
-        axios.get('http://react.professorburnes.com.br/produto/'+id)
+        axios.get('https://react.professorburnes.com.br/produto/'+id)
         .then((response) => {
             getProduto(response.data[0]);
         })
